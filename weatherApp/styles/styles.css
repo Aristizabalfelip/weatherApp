@@ -1,53 +1,84 @@
-body{
-    background-color: rgb(50, 50, 50);
-    background-image: url(../assets/imgSky.jpg); 
-      
 
+
+body{
+    background-image: url(../assets/imgSky.jpg); 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-size: 2600px;
 }
 .form {
 padding: 40px;
+
 }
 .info {
     
     display: flex;
     justify-content: center;
     font-size: 30px;
-    padding-top: 100px;
+    padding-top: 30px;
+
+}
+.general {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
 
 }
 .info div {
-    display: flex;
-    gap: 50px;
+    padding: 40px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.7);
+    border: 1px solid;
+    border-radius: 50px;
+}
+.info div button {
+ padding: 13px;
+ border-radius: 20px;
+border: none;
+ width: 150px;
+ font-size: 22px;
+
 }
 .form input {
     padding: 10px;
+  
 }
 .form input:nth-of-type(1) {
     height: 20px;
 }
 .form input:nth-of-type(1) {  
     background-color: transparent;
-    padding: 10px;
+    padding-left: 30px;
     border-radius: 50px 50px 50% 50% / 60px 60px 50% 50%;
-   
     display: inline-block;
+    height: 50px;
+    width: 250px;
+    border: 1px solid;
+    font-size: 20px;
+}
+input::placeholder {
+  font-size: 20px;
 }
 
 form {
     display: flex;
     gap: 15px;
 }
+
+
 .custom-button {
     background-image: url(../assets/iconWeather.png);
     background-size: cover;
-    width: 40px;
-    height: 40px;
     border: none;
     color: transparent;
     text-indent: -9999px;
     cursor: pointer;
     transition: border-width 0.3s ease-in-out;
     background-color: transparent;
+    height: 69px;
+    width: 69px;
   }
 
 .custom-button:hover {
@@ -55,8 +86,46 @@ form {
    border-width: 10px;
    background-color: #f0f0f0;
     padding: 10px;
-    border-radius: 50px 50px 50% 50% / 60px 60px 50% 50%;
+    border-radius: 50px 50px 50% 50%;
     display: inline-block;
+  }
+
+
+  .forecast> div div {
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px 1px 20px;
+  }
+  .forecast> div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .forecast article {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  .cards {
+    background-color: rgba(255,255,255,0.5);
+    border: 1px solid;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 900px;
+  }
+
+  .btn{
+    cursor: pointer;
+    transition: 0.5;
+  }
+
+  .btn:hover{
+    transform: scale(1.05);
+  
   }
 
 
